@@ -17,7 +17,7 @@
     </PackageReference>
   </ItemGroup>
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <DefineConstants>$(DefineConstants);ADOS2019;TFS2018;TFS2017u2;TFS2017;TFS2015u2;TFS2015u1;TFS2015</DefineConstants>
     <TfsInstallationDirectory Condition="'$(TfsInstallationDirectory)'=='' and '$(MSBuildRuntimeType)' != 'Core'">$(Registry:HKEY_LOCAL_MACHINE\Software\Microsoft\TeamFoundationServer\17.0@InstallPath)</TfsInstallationDirectory>
     <TfsInstallationDirectory Condition="'$(TfsInstallationDirectory)'=='' and '$(MSBuildRuntimeType)' != 'Core'">$(Registry:HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\TeamFoundationServer\17.0@InstallPath)</TfsInstallationDirectory>

@@ -189,3 +189,4 @@ Setup.Aggregator/_clisrv.g.properties
 nuget.exe
 **/launchSettings.json
 *.binlog
+/Aggregator.Core/.gitignore
