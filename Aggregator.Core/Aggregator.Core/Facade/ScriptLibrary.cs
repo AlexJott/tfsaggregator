@@ -63,7 +63,7 @@ namespace Aggregator.Core.Facade
                 this.Enabled = false;
                 try
                 {
-                    IVssRegistryService service = requestContext.GetService<IVssRegistryService>();
+                    IVssRegistryService service = requestContext.GetService<TeamFoundationRegistryService>();
                     Microsoft.TeamFoundation.Framework.Server.RegistryEntryCollection registryEntryCollection = service.ReadEntriesFallThru(requestContext, this.NotificationRootPath + "/*");
                     if (registryEntryCollection["EmailEnabled"].GetValue<bool>(true))
                     {

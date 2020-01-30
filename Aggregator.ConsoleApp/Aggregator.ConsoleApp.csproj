@@ -110,7 +110,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-2019|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <TfsVersion>2019</TfsVersion>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <DebugType>full</DebugType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-2018|AnyCPU'">
@@ -121,13 +121,12 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-2019|AnyCPU'">
     <TfsVersion>2019</TfsVersion>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>TfsAggregator.ico</ApplicationIcon>
-    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -148,32 +147,17 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Desktop.Analyzers" Version="1.1.0" />
-    <PackageReference Include="ManyConsole" Version="2.0.1" />
+    <PackageReference Include="ManyConsole" Version="1.0.0.4" />
     <PackageReference Include="Microsoft.AnalyzerPowerPack" Version="1.1.0" />
     <PackageReference Include="NDesk.Options" Version="0.2.1" />
     <PackageReference Include="SonarLint" Version="1.6.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.2.0.14119">
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="7.8.0.7320">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Aggregator.Core\Aggregator.Core\Aggregator.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Microsoft.VisualStudio.Services.Client" Version="16.153.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Microsoft.TeamFoundationServer.ExtendedClient" Version="16.153.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Microsoft.VisualStudio.Services.InteractiveClient" Version="16.153.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Microsoft.TeamFoundationServer.Client" Version="16.153.0" />
   </ItemGroup>
 </Project>
